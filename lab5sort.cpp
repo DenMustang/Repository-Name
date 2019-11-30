@@ -6,36 +6,36 @@ using namespace std;
 class Array
 {
 private:
-    double dArr[n];
+    double Arrayy[n];
 public:
-    friend void InputArray(Array arr[]);
-    friend void OutputArray(Array arr[]);
-    friend void SortArray(Array arr[]);
-    friend void CalcArray(Array arr[]);
+    friend void InputArray(Array array[]);
+    friend void OutputArray(Array array[]);
+    friend void BubleSortArray(Array array[]);
+    friend void CalcArray(Array array[]);
 };
-void InputArray(Array  arr[])
+void InputArray(Array  array[])
 {
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
         {
             cout << "[" << i + 1 << "][" << j + 1  << "] = ";
-            cin >> arr[i].dArr[j];
+            cin >> array[i].Arrayy[j];
         }
 }
-void OutputArray(Array  arr[])
+void OutputArray(Array  array[])
 {
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            cout << arr[j].dArr[i] << "\t";
+            cout << array[j].Arrayy[i] << "\t";
         }
         cout << endl;
     }
 }
 
 
-void SortArray(Array  arr[])
+void BubleSortArray(Array  array[])
 {
     for (int i = 0; i < n; i++)
     {
